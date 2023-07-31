@@ -7,9 +7,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey[800],
+        backgroundColor: Colors.blue[800],
         appBar: AppBar(
-          title: const Text('Internet images'),
+          backgroundColor: Colors.black12.withOpacity(0.1),
+          title: const Text('Images'),
         ),
         body: Center(
           child: Container(
@@ -17,9 +18,15 @@ class HomePage extends StatelessWidget {
             height: 400,
             child: Column(
               children: [
-                Image.network(
-                    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1YM53mG10H_U25iPjop83QHaEo%26pid%3DApi&f=1&ipt=e8b1b8707640785ba13fdef737422182d0660550ec34619e444b0051524534e1&ipo=images'),
-                Image.asset('assets/image1.jpg'),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Image.network(
+                      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1YM53mG10H_U25iPjop83QHaEo%26pid%3DApi&f=1&ipt=e8b1b8707640785ba13fdef737422182d0660550ec34619e444b0051524534e1&ipo=images'),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Image.asset('assets/image1.jpg'),
+                )
               ],
             ),
           ),
