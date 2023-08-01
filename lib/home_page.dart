@@ -26,6 +26,10 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Image.asset('assets/image1.jpg'),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Image.asset('assets/image2.jpg'),
                 )
               ],
             ),
